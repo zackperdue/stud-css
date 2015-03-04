@@ -54,3 +54,14 @@ This is the markup for the test above.
   </div>
 </div>
 ```
+
+## Compile Sass
+
+Project is written in [Sass Lang](http://sass-lang.com/), so you'll need to
+re-compile if you make any changes. Make sure `sass gem` is installed first: [Installing Sass](http://sass-lang.com/install)
+
+Then run the command below from within the repo:
+
+```
+sass --watch src/sass:dist/css
+```
