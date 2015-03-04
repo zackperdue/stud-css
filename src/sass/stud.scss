@@ -1,0 +1,47 @@
+.container{
+  max-width: 71.25em;
+  width: 100%;
+  .row{
+    .column{
+      float: left;
+      display: inline;
+      box-sizing: border-box;
+    }
+    .one{
+      width: 8.33%;
+    }
+    .two{
+      width: 16.67%;
+    }
+    .three{
+      width: 25%;
+    }
+    .four{
+      width: 33.33%;
+    }
+    .five{
+      width: 41.67%;
+    }
+    .six{
+      width: 50%;
+    }
+    .seven{
+      width: 58.33%;
+    }
+    .eight{
+      width: 66.67%;
+    }
+    .nine{
+      width: 75%;
+    }
+    .ten{
+      width: 83.33%;
+    }
+    .eleven{
+      width: 91.67%;
+    }
+    .twelve{
+      width: 100%;
+    }
+  }
+}

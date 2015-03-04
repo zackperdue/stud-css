@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stud Example</title>
+  <link rel="stylesheet" href="../dist/css/stud.css">
+  <link rel="stylesheet" href="prism.css">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+  <script src="prism.js" type="text/javascript"></script>
+  <style>
+    body{
+      font-family: 'Raleway', 'Helvetica Neue', arial, sans-serif;
+    }
+    a{
+      color: #000;
+      transition: color .2s ease;
+    }
+    a:hover{
+      color: #990099;
+    }
+    .test .row{
+      border: 1px solid #eee;
+      border-right: none;
+      border-bottom: none;
+      overflow: hidden;
+    }
+    .test .column{
+      text-align: center;
+      height: 40px;
+      line-height: 40px;
+      border-right: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="twelve column">
+        <h1>Stud CSS Grid</h1>
+        <p>
+          A very simple <strong>non oppinionated</strong> css grid framework
+          for building highly customized website layouts.
+          Stud grid makes <strong>no assumptions</strong> over gutters, padding
+          or margins.
+        </p>
+      </div>
+    </div>
+    <div class="test">
+      <div class="row">
+        <div class="column one">1</div>
+        <div class="column eleven">11</div>
+
+        <div class="column two">2</div>
+        <div class="column ten">10</div>
+
+        <div class="column three">3</div>
+        <div class="column nine">9</div>
+
+        <div class="column four">4</div>
+        <div class="column eight">8</div>
+
+        <div class="column five">5</div>
+        <div class="column seven">7</div>
+
+        <div class="column six">6</div>
+        <div class="column six">6</div>
+
+        <div class="column seven">7</div>
+        <div class="column five">5</div>
+
+        <div class="column eight">8</div>
+        <div class="column four">4</div>
+
+        <div class="column nine">9</div>
+        <div class="column three">3</div>
+
+        <div class="column ten">10</div>
+        <div class="column two">2</div>
+
+        <div class="column eleven">11</div>
+        <div class="column one">1</div>
+
+        <div class="column twelve">12</div>
+      </div>
+
+      <h3>Why?</h3>
+      <p>
+        This is the css grid that I created for my personal/client projects
+        because I found that all other css frameworks made too many
+        assumptions about how my applications should look.
+      </p>
+      <p>Instead of placing margins or padding on the columns themselves, I
+         propose that you place any margin or padding on your important
+         components that are inside of the columns, giving you more control
+         over your grid and layout and less customization of the framework.
+      </p>
+
+      <h3>How to use</h3>
+      <p>This is the markup for the test above.</p>
+      <pre class="language-markup">
+        <code class="language-markup">
+
+          &#x3C;div class=&#x22;container&#x22;&#x3E;
+            &#x3C;div class=&#x22;row&#x22;&#x3E;
+              &#x3C;div class=&#x22;column one&#x22;&#x3E;1&#x3C;/div&#x3E;
+              &#x3C;div class=&#x22;column eleven&#x22;&#x3E;11&#x3C;/div&#x3E;
+
+              &#x3C;div class=&#x22;column two&#x22;&#x3E;2&#x3C;/div&#x3E;
+              &#x3C;div class=&#x22;column ten&#x22;&#x3E;10&#x3C;/div&#x3E;
+
+              &#x3C;div class=&#x22;column three&#x22;&#x3E;3&#x3C;/div&#x3E;
+              &#x3C;div class=&#x22;column nine&#x22;&#x3E;9&#x3C;/div&#x3E;
+
+              &#x3C;div class=&#x22;column four&#x22;&#x3E;4&#x3C;/div&#x3E;
+              &#x3C;div class=&#x22;column eight&#x22;&#x3E;8&#x3C;/div&#x3E;
+
+              &#x3C;div class=&#x22;column five&#x22;&#x3E;5&#x3C;/div&#x3E;
+              &#x3C;div class=&#x22;column seven&#x22;&#x3E;7&#x3C;/div&#x3E;
+
+              &#x3C;div class=&#x22;column six&#x22;&#x3E;6&#x3C;/div&#x3E;
+              &#x3C;div class=&#x22;column six&#x22;&#x3E;6&#x3C;/div&#x3E;
+
+              &#x3C;div class=&#x22;column seven&#x22;&#x3E;7&#x3C;/div&#x3E;
+              &#x3C;div class=&#x22;column five&#x22;&#x3E;5&#x3C;/div&#x3E;
+
+              &#x3C;div class=&#x22;column eight&#x22;&#x3E;8&#x3C;/div&#x3E;
+              &#x3C;div class=&#x22;column four&#x22;&#x3E;4&#x3C;/div&#x3E;
+
+              &#x3C;div class=&#x22;column nine&#x22;&#x3E;9&#x3C;/div&#x3E;
+              &#x3C;div class=&#x22;column three&#x22;&#x3E;3&#x3C;/div&#x3E;
+
+              &#x3C;div class=&#x22;column ten&#x22;&#x3E;10&#x3C;/div&#x3E;
+              &#x3C;div class=&#x22;column two&#x22;&#x3E;2&#x3C;/div&#x3E;
+
+              &#x3C;div class=&#x22;column eleven&#x22;&#x3E;11&#x3C;/div&#x3E;
+              &#x3C;div class=&#x22;column one&#x22;&#x3E;1&#x3C;/div&#x3E;
+
+              &#x3C;div class=&#x22;column twelve&#x22;&#x3E;12&#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+          &#x3C;/div&#x3E;
+        </code>
+      </pre>
+    </div>
+  </div>
+  <p>
+    Stud CSS Grid Created by <a href="http://linkedin.com/in/zackperdue" target="_blank" rel="nofollow">Zack Perdue</a>
+  </p>
+</body>
+</html>
